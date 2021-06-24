@@ -1,0 +1,79 @@
+/* Reset */
+
+*,
+*::after,
+*::before {
+    content: '';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-weight: 500;
+}
+
+
+/* Global Styles */
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 18px 36px;
+    background-color: #212529;
+    display: inline-block;
+    color: #DEE2E6;
+    font-size: 14px;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 15px;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* Logo */
+
+.brand {
+    font-size: 20px;
+    color: #E9ECEF;
+}
+
+
+/* Menu */
+
+.menu-links {
+    display: flex;
+    align-items: center;
+}
+
+.menu-links .menu-item {
+    margin: 8px;
+}
+
+.menu-links .menu-item .menu-link {
+    padding: 8px;
+    font-size: 14px;
+    color: #DEE2E6;
+}
+
+
+/* Social Media */
+
+.social-media .menu-item {
+    margin: 0;
+}

@@ -1,0 +1,26 @@
+/* Fonts */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #212529;
+    /* position: relative; */
+}
+
+
+/* Hero */
+
+.hero {
+    background: url('../img/hero-bg.jpg') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 40px;
+    line-height: 48px;
+    padding: 48px 0;
+}
