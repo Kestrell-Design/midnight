@@ -1,0 +1,28 @@
+/* Colors */
+
+:root {
+    --gray-100: #F8F9FA;
+    --gray-200: #E9ECEF;
+    --gray-300: #DEE2E6;
+    --gray-400: #CED4DA;
+    --gray-600: #6C757D;
+    --gray-800: #343A40;
+    --gray-900: #212529;
+}
+
+
+/* Body */
+
+:root {
+    --body-14: 0.875rem;
+}
+
+
+/* Headings */
+
+:root {
+    --heading-1: 2.5rem;
+    --heading-4: 1.5rem;
+    --heading-5: 1.25rem;
+    --heading-6: 1rem;
+}
