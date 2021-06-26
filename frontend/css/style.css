@@ -47,7 +47,11 @@ body {
 /* Works */
 
 .works-box {
+    align-items: center;
+    display: grid;
     gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
 }
 
 

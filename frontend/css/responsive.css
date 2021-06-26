@@ -1,0 +1,44 @@
+/* Tablet */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 64px 15px;
+        margin: 0 auto;
+        max-width: 690px;
+    }
+    .card-box {
+        align-items: center;
+        display: grid;
+        justify-content: center;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card {
+        width: 330px;
+    }
+    header,
+    footer {
+        max-width: 768px;
+    }
+    .hero h1 {
+        max-width: 510px;
+    }
+    .about-us {
+        grid-template-columns: 1fr;
+    }
+    .works-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .testimonials h2 {
+        max-width: 690px;
+    }
+    .contact {
+        grid-template-columns: 1fr;
+    }
+    .contact-content {
+        margin: 0 auto;
+    }
+    .contact .contact-img {
+        display: none;
+    }
+}

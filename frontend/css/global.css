@@ -49,9 +49,8 @@ img {
 
 .btn:hover {
     background-color: var(--gray-900);
-    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, .5); */
     color: var(--gray-100);
-    /* transform: scale(1.1); */
+    transform: translateY(-3px);
 }
 
 .flex {
@@ -136,22 +135,29 @@ header {
 }
 
 .menu-links .menu-item .menu-link {
-    padding: 8px;
-    font-size: 14px;
     color: var(--gray-600);
+    font-size: 14px;
+    padding: 8px;
+    transition: all 600ms;
 }
 
 .menu-links .menu-item .menu-link:hover {
     color: var(--gray-900);
-    transition: all 600ms;
+    display: block;
+    transform: translateY(-3px);
 }
 
 
 /* Social Media */
 
-.social-media .menu-item {
+.social-media {
     margin: 0;
     padding: 9px;
+    transition: all 600ms;
+}
+
+.social-media img:hover {
+    transform: translateY(-3px);
 }
 
 
@@ -166,4 +172,9 @@ footer {
     right: 0;
     width: 1140px;
     flex-direction: column;
+}
+
+footer .copy {
+    color: var(--gray-600);
+    font-size: var(--body-14);
 }
