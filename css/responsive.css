@@ -47,6 +47,9 @@
 /* Mobile */
 
 @media (max-width: 375px) {
+    body {
+        overflow-x: hidden;
+    }
     .container {
         padding: 64px 15px;
         margin: 0 auto;

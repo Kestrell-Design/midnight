@@ -23,14 +23,20 @@
 <body>
 
     <!-- Header -->
-    <header class="flex">
+    <header class="main-header flex">
 
         <!-- Logo -->
         <a href="index.html" class="brand">midnight</a>
 
         <!-- Menu -->
-        <nav>
-            <ul class="menu-links">
+        <nav id="nav">
+
+            <!-- Menu Mobile -->
+            <button id="btn-mobile">
+                <span><i class="fi-rr-menu-burger"></i></span>
+            </button>
+
+            <ul class="menu-links" id="nav-links">
                 <li class="menu-item">
                     <a href="index.html" class="menu-link">Home</a>
                 </li>
@@ -50,20 +56,25 @@
         </nav>
 
         <!-- Social Media -->
-        <ul class="menu-links social-media">
+        <ul class="menu-links social-media flex">
             <li class="menu-item">
-                <a href="/" class="menu-link">
+                <a href="/">
                     <img src="img/svg/twitter.svg" alt="Twitter">
                 </a>
             </li>
             <li class="menu-item">
-                <a href="/" class="menu-link">
+                <a href="/">
                     <img src="img/svg/instagram.svg" alt="Instagram">
                 </a>
             </li>
             <li class="menu-item">
-                <a href="/" class="menu-link">
+                <a href="/">
                     <img src="img/svg/linkedin.svg" alt="linkedin">
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="/">
+                    <img src="img/svg/dribbble.svg" alt="Dribbble">
                 </a>
             </li>
         </ul>
