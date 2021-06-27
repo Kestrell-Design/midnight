@@ -116,3 +116,10 @@ textarea {
     font-family: 'Poppins', sans-serif;
     width: 540px;
 }
+
+
+/* Internal Pages */
+
+.services-bg {
+    background: url('../img/internal-hero-bg.jpg') no-repeat top center;
+}

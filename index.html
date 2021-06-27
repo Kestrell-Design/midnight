@@ -22,19 +22,25 @@
 <body>
 
     <!-- Header -->
-    <header class="flex">
+    <header class="main-header flex">
 
         <!-- Logo -->
         <a href="index.html" class="brand">midnight</a>
 
         <!-- Menu -->
-        <nav>
-            <ul class="menu-links">
+        <nav id="nav">
+
+            <!-- Menu Mobile -->
+            <button id="btn-mobile">
+                <span><i class="fi-rr-menu-burger"></i></span>
+            </button>
+
+            <ul class="menu-links" id="nav-links">
                 <li class="menu-item">
-                    <a href="/" class="menu-link">Home</a>
+                    <a href="index.html" class="menu-link">Home</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/" class="menu-link">Serviços</a>
+                    <a href="services.html" class="menu-link">Serviços</a>
                 </li>
                 <li class="menu-item">
                     <a href="/" class="menu-link">Sobre Nós</a>
@@ -49,20 +55,25 @@
         </nav>
 
         <!-- Social Media -->
-        <ul class="menu-links social-media">
+        <ul class="menu-links social-media flex">
             <li class="menu-item">
-                <a href="/" class="menu-link">
+                <a href="/">
                     <img src="img/svg/twitter.svg" alt="Twitter">
                 </a>
             </li>
             <li class="menu-item">
-                <a href="/" class="menu-link">
+                <a href="/">
                     <img src="img/svg/instagram.svg" alt="Instagram">
                 </a>
             </li>
             <li class="menu-item">
-                <a href="/" class="menu-link">
+                <a href="/">
                     <img src="img/svg/linkedin.svg" alt="linkedin">
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="/">
+                    <img src="img/svg/dribbble.svg" alt="Dribbble">
                 </a>
             </li>
         </ul>
@@ -71,11 +82,11 @@
     <!-- Hero -->
     <section class="hero flex">
         <h1>Ajudamos os inovadores a dar vida a seus negócios com sucesso</h1>
-        <a href="/" class="btn">Comece Hoje</a>
+        <a href="#contact" class="btn">Comece Hoje</a>
     </section>
 
     <!-- Services -->
-    <section class="services container">
+    <section class="services container js-scroll">
         <div class="title">
             <h1>O Que Fazemos</h1>
         </div>
@@ -111,7 +122,7 @@
     </section>
 
     <!-- About Us -->
-    <section class="about-us container">
+    <section class="about-us container js-scroll">
 
         <div class="about-img">
             <img src="img/about/about-img.png" alt="Sobre a Midnight">
@@ -124,7 +135,7 @@
     </section>
 
     <!-- Works -->
-    <main class="works container">
+    <main class="works container js-scroll">
         <div class="title">
             <h1>Trabalhos Recentes</h1>
         </div>
@@ -139,7 +150,7 @@
     </main>
 
     <!-- Testimonials -->
-    <section class="testimonials flex">
+    <section class="testimonials flex js-scroll">
         <div class="box">
             <i class="fi-rr-quote-right"></i>
             <h2>
@@ -150,9 +161,7 @@
     </section>
 
     <!-- Get In Tounch -->
-    <section class="contact container">
-
-
+    <section class="contact container js-scroll" id="contact">
         <div class="contact-content">
             <form action="/">
                 <input type="text" placeholder="Nome">
@@ -165,7 +174,6 @@
         <div class="contact-img">
             <img src="img/contact/contact-img.png" alt="Entre em contato">
         </div>
-
     </section>
 
     <!-- Footer -->
@@ -220,6 +228,8 @@
         <span class="copy">Copyright ©2021 All rights reserved</span>
     </footer>
 
+    <!-- Js -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

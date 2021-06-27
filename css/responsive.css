@@ -16,9 +16,9 @@
     .card {
         width: 330px;
     }
-    header,
+    .main-header,
     footer {
-        max-width: 768px;
+        max-width: 100%;
     }
     .hero h1 {
         max-width: 510px;
@@ -40,5 +40,53 @@
     }
     .contact .contact-img {
         display: none;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 375px) {
+    .container {
+        padding: 64px 15px;
+        margin: 0 auto;
+        max-width: 346px;
+    }
+    .main-header,
+    footer {
+        max-width: 100%;
+    }
+    .card-box {
+        align-items: center;
+        display: grid;
+        justify-content: center;
+        gap: 30px;
+        grid-template-columns: 1fr;
+    }
+    .card {
+        width: 346px;
+    }
+    .hero h1 {
+        max-width: 510px;
+    }
+    .about-us {
+        grid-template-columns: 1fr;
+    }
+    .works-box {
+        grid-template-columns: 1fr;
+    }
+    .testimonials h2 {
+        max-width: 346px;
+    }
+    .contact {
+        grid-template-columns: 1fr;
+    }
+    .contact input,
+    textarea {
+        margin: 15px auto;
+        width: 346px;
+    }
+    .contact-content .btn {
+        width: 346px;
     }
 }

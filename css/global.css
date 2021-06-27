@@ -50,7 +50,6 @@ img {
 .btn:hover {
     background-color: var(--gray-900);
     color: var(--gray-100);
-    transform: translateY(-3px);
 }
 
 .flex {
@@ -104,14 +103,23 @@ img {
 
 /* Header */
 
-header {
+.main-header {
     left: 0;
     justify-content: space-between !important;
     margin: 0 auto;
     padding: 32px 15px;
     position: absolute;
     right: 0;
-    width: 1140px;
+    max-width: 100%;
+    transition: all .2s ease-in;
+}
+
+.main-header.sticky {
+    background-color: var(--gray-100);
+    box-shadow: 0 16px 20px rgba(0, 0, 0, .06);
+    padding: 18px 15px;
+    position: fixed;
+    z-index: 1000;
 }
 
 
@@ -143,8 +151,6 @@ header {
 
 .menu-links .menu-item .menu-link:hover {
     color: var(--gray-900);
-    display: block;
-    transform: translateY(-3px);
 }
 
 
@@ -153,11 +159,6 @@ header {
 .social-media {
     margin: 0;
     padding: 9px;
-    transition: all 600ms;
-}
-
-.social-media img:hover {
-    transform: translateY(-3px);
 }
 
 
@@ -177,4 +178,36 @@ footer {
 footer .copy {
     color: var(--gray-600);
     font-size: var(--body-14);
+}
+
+
+/* Internal Pages */
+
+.internal-hero {
+    height: 500px;
+}
+
+.internal-hero h1 {
+    font-size: var(--heading-1);
+}
+
+
+/* Outros */
+
+#btn-mobile {
+    display: none;
+}
+
+
+/* Animações Css */
+
+.js-scroll {
+    opacity: 0;
+    transition: 0.6s;
+    transform: translate3d(-60px, 0, 0);
+}
+
+.js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }
