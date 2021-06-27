@@ -1,0 +1,180 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    color: var(--gray-800);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+p,
+a {
+    color: var(--gray-600);
+    font-size: var(--body-14);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* Global Styles */
+
+.container {
+    max-width: 1140px;
+    padding: 64px 15px;
+    margin: 160px auto;
+}
+
+.btn {
+    background-color: var(--gray-100);
+    border-radius: 50px;
+    border: 1px solid var(--gray-300);
+    color: var(--gray-600);
+    display: inline-block;
+    font-size: var(--body-14);
+    padding: 18px 36px;
+    transition: all 600ms;
+}
+
+.btn:hover {
+    background-color: var(--gray-900);
+    color: var(--gray-100);
+    transform: translateY(-3px);
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title {
+    padding: 96px 0;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: var(--heading-1);
+}
+
+
+/* Components */
+
+.card-box {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    border: 1px solid var(--gray-200);
+    padding: 48px 16px;
+}
+
+.card i {
+    color: var(--gray-800);
+    display: inline-block;
+    font-size: var(--heading-4);
+    padding-bottom: 32px;
+}
+
+.card h2 {
+    font-size: var(--heading-6);
+    padding-bottom: 18px;
+}
+
+.card p {
+    max-width: 219px;
+}
+
+
+/* Header */
+
+header {
+    left: 0;
+    justify-content: space-between !important;
+    margin: 0 auto;
+    padding: 32px 15px;
+    position: absolute;
+    right: 0;
+    width: 1140px;
+}
+
+
+/* Logo */
+
+.brand {
+    font-size: 20px;
+    color: var(--gray-600);
+}
+
+
+/* Menu */
+
+.menu-links {
+    display: flex;
+    align-items: center;
+}
+
+.menu-links .menu-item {
+    margin: 8px;
+}
+
+.menu-links .menu-item .menu-link {
+    color: var(--gray-600);
+    font-size: 14px;
+    padding: 8px;
+    transition: all 600ms;
+}
+
+.menu-links .menu-item .menu-link:hover {
+    color: var(--gray-900);
+    display: block;
+    transform: translateY(-3px);
+}
+
+
+/* Social Media */
+
+.social-media {
+    margin: 0;
+    padding: 9px;
+    transition: all 600ms;
+}
+
+.social-media img:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Footer */
+
+footer {
+    left: 0;
+    justify-content: space-between !important;
+    margin: 0 auto;
+    padding: 32px 15px;
+    position: absolute;
+    right: 0;
+    width: 1140px;
+    flex-direction: column;
+}
+
+footer .copy {
+    color: var(--gray-600);
+    font-size: var(--body-14);
+}
