@@ -25,15 +25,12 @@
     <header class="main-header flex">
 
         <!-- Logo -->
-        <a href="index.html" class="brand">midnight</a>
+        <a href="index.html" class="brand">
+            <img src="img/svg/logo.svg" alt="Midnight">
+        </a>
 
         <!-- Menu -->
         <nav id="nav">
-
-            <!-- Menu Mobile -->
-            <button id="btn-mobile">
-                <span><i class="fi-rr-menu-burger"></i></span>
-            </button>
 
             <ul class="menu-links" id="nav-links">
                 <li class="menu-item">
@@ -43,7 +40,7 @@
                     <a href="services.html" class="menu-link">Serviços</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/" class="menu-link">Sobre Nós</a>
+                    <a href="/" class="menu-link">Sobre</a>
                 </li>
                 <li class="menu-item">
                     <a href="/" class="menu-link">Trabalhos</a>
@@ -52,31 +49,33 @@
                     <a href="/" class="menu-link">Contato</a>
                 </li>
             </ul>
+
+            <!-- Social Media -->
+            <ul class="menu-links social-media flex">
+                <li class="menu-item">
+                    <a href="/">
+                        <img src="img/svg/twitter.svg" alt="Twitter">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/">
+                        <img src="img/svg/instagram.svg" alt="Instagram">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/">
+                        <img src="img/svg/linkedin.svg" alt="linkedin">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/">
+                        <img src="img/svg/dribbble.svg" alt="Dribbble">
+                    </a>
+                </li>
+            </ul>
         </nav>
 
-        <!-- Social Media -->
-        <ul class="menu-links social-media flex">
-            <li class="menu-item">
-                <a href="/">
-                    <img src="img/svg/twitter.svg" alt="Twitter">
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="/">
-                    <img src="img/svg/instagram.svg" alt="Instagram">
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="/">
-                    <img src="img/svg/linkedin.svg" alt="linkedin">
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="/">
-                    <img src="img/svg/dribbble.svg" alt="Dribbble">
-                </a>
-            </li>
-        </ul>
+
     </header>
 
     <!-- Hero -->
@@ -88,35 +87,35 @@
     <!-- Services -->
     <section class="services container js-scroll">
         <div class="title">
-            <h1>O Que Fazemos</h1>
+            <h1>Serviços</h1>
         </div>
         <div class="card-box">
             <!-- Card 1 -->
             <div class="card">
-                <i class="fi-rr-fill"></i>
-                <h2>Design Gráfico</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                <i class="fi-rr-browser"></i>
+                <h2>Web Design</h2>
+
             </div>
 
             <!-- Card 2 -->
             <div class="card">
-                <i class="fi-rr-browser"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                <i class="fi-rr-megaphone"></i>
+                <h2>Marketing Digital</h2>
+
             </div>
 
             <!-- Card 3 -->
             <div class="card">
-                <i class="fi-rr-smartphone "></i>
-                <h2>Mobile App</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                <i class="fi-rr-search "></i>
+                <h2>Otimização de S.E.0</h2>
+
             </div>
 
             <!-- Card 4 -->
             <div class="card">
-                <i class="fi-rr-diamond"></i>
-                <h2>Branding</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                <i class="fi-rr-heart"></i>
+                <h2>Social Media</h2>
+
             </div>
         </div>
     </section>
@@ -125,44 +124,57 @@
     <section class="about-us container js-scroll">
 
         <div class="about-img">
-            <img src="img/about/about-img.png" alt="Sobre a Midnight">
+            <img src="img/about-img.jpg" alt="Sobre a Midnight">
         </div>
         <div class="about-content">
-            <h1>Nós Criamos Temas Perfeitos De Pixel</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices eget pharetra accumsan, posuere. Enim, ornare elementum faucibus lacus massa ipsum, lorem. Auctor faucibus amet iaculis morbi quis arcu. Eu facilisis orci mauris augue.</p>
-            <a href="/" class="btn">Nossa História</a>
+            <h1>A midnight</h1>
+            <p>Há mais de 10 anos no mercado de Web Design, Marketing Digital nos empenhamos diariamente para entregar resultados que tragam impacto aos nossos clientes. <br> <br> Atualmente não basta apenas ter um site, é preciso construir uma marca que
+                apresente os seus diferenciais em todos os âmbitos. Nós estamos aqui para te ajudar, conheça um pouco da nossa história e de como chegamos até aqui</p>
         </div>
     </section>
 
     <!-- Works -->
     <main class="works container js-scroll">
         <div class="title">
-            <h1>Trabalhos Recentes</h1>
+            <h1>Trabalhos</h1>
         </div>
-        <div class="works-box ">
-            <img src="img/works/job-1.jpg" alt="Projeto 1">
-            <img src="img/works/job-2.jpg" alt="Projeto 2">
-            <img src="img/works/job-3.jpg" alt="Projeto 3">
-            <img src="img/works/job-4.jpg" alt="Projeto 4">
-            <img src="img/works/job-5.jpg" alt="Projeto 5">
-            <img src="img/works/job-6.jpg" alt="Projeto 6">
+
+        <div class="works-box">
+
+            <a href="portfolio-single.html">
+                <img src="img/job-1.png" alt="Projeto 1">
+            </a>
+
+            <a href="portfolio-single.html">
+                <img src="img/job-2.png" alt="Projeto 2">
+            </a>
+
+            <a href="portfolio-single.html">
+                <img src="img/job-3.png" alt="Projeto 3">
+            </a>
+
+            <a href="portfolio-single.html">
+                <img src="img/job-4.png" alt="Projeto 4">
+            </a>
+
+            <a href="portfolio-single.html">
+                <img src="img/job-5.png" alt="Projeto 5">
+            </a>
+
+            <a href="portfolio-single.html">
+                <img src="img/job-6.png" alt="Projeto 6">
+            </a>
+
         </div>
+
     </main>
 
-    <!-- Testimonials -->
-    <section class="testimonials flex js-scroll">
-        <div class="box">
-            <i class="fi-rr-quote-right"></i>
-            <h2>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, molestie magnis fusce eu commodo, nisi. Augue ornare augue a justo, quam pharetra est venenatis tempor.
-            </h2>
-            <span>Jhon Doe</span>
-        </div>
-    </section>
-
-    <!-- Get In Tounch -->
+    <!-- Contact -->
     <section class="contact container js-scroll" id="contact">
-        <div class="contact-content">
+        <div class="title">
+            <h1>Entre em Contato</h1>
+        </div>
+        <div class="contact-box">
             <form action="/">
                 <input type="text" placeholder="Nome">
                 <input type="email" placeholder="E-mail">
@@ -170,16 +182,14 @@
                 <button class="btn">Enviar Menssagem</button>
             </form>
         </div>
-
-        <div class="contact-img">
-            <img src="img/contact/contact-img.png" alt="Entre em contato">
-        </div>
     </section>
 
     <!-- Footer -->
     <footer class="flex">
         <!-- Logo -->
-        <a href="index.html" class="brand">midnight</a>
+        <a href="index.html" class="brand">
+            <img src="img/svg/logo.svg" alt="midnight">
+        </a>
 
         <!-- Menu -->
         <nav>

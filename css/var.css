@@ -1,6 +1,8 @@
 /* Colors */
 
 :root {
+    --gradient-1: linear-gradient(120deg, rgba(248, 71, 31, 1) 0%, rgba(221, 25, 95, 1) 100%);
+    --primary: #E9204F;
     --gray-100: #F8F9FA;
     --gray-200: #E9ECEF;
     --gray-300: #DEE2E6;
@@ -8,6 +10,13 @@
     --gray-600: #6C757D;
     --gray-800: #343A40;
     --gray-900: #212529;
+}
+
+
+/* Font */
+
+:root {
+    --font-family: 'Poppins', sans-serif;
 }
 
 

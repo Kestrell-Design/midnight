@@ -52,12 +52,8 @@
     }
     .container {
         padding: 64px 15px;
-        margin: 0 auto;
+        margin: 96px auto;
         max-width: 346px;
-    }
-    .main-header,
-    footer {
-        max-width: 100%;
     }
     .card-box {
         align-items: center;
