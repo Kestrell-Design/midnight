@@ -24,29 +24,36 @@
     <!-- Header -->
     <header class="main-header flex">
 
-        <!-- Logo -->
-        <a href="index.html" class="brand">
-            <img src="img/svg/logo.svg" alt="Midnight">
-        </a>
-
         <!-- Menu -->
-        <nav id="nav">
+        <nav class="main-nav flex" id="nav">
+
+            <!-- Logo -->
+            <a href="index.html" class="brand">
+                <img src="img/svg/logo.svg" alt="Midnight">
+            </a>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
 
             <ul class="menu-links" id="nav-links">
                 <li class="menu-item">
                     <a href="index.html" class="menu-link">Home</a>
                 </li>
                 <li class="menu-item">
-                    <a href="services.html" class="menu-link">Serviços</a>
+                    <a href="#services" class="menu-link">Serviços</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/" class="menu-link">Sobre</a>
+                    <a href="#about" class="menu-link">Sobre</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/" class="menu-link">Trabalhos</a>
+                    <a href="#works" class="menu-link">Trabalhos</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/" class="menu-link">Contato</a>
+                    <a href="#contact" class="menu-link">Contato</a>
                 </li>
             </ul>
 
@@ -74,8 +81,6 @@
                 </li>
             </ul>
         </nav>
-
-
     </header>
 
     <!-- Hero -->
@@ -85,7 +90,7 @@
     </section>
 
     <!-- Services -->
-    <section class="services container js-scroll">
+    <section class="services container js-scroll" id="services">
         <div class="title">
             <h1>Serviços</h1>
         </div>
@@ -121,7 +126,7 @@
     </section>
 
     <!-- About Us -->
-    <section class="about-us container js-scroll">
+    <section class="about-us container js-scroll" id="about">
 
         <div class="about-img">
             <img src="img/about-img.jpg" alt="Sobre a Midnight">
@@ -134,7 +139,7 @@
     </section>
 
     <!-- Works -->
-    <main class="works container js-scroll">
+    <main class="works container js-scroll" id="works">
         <div class="title">
             <h1>Trabalhos</h1>
         </div>
@@ -195,19 +200,19 @@
         <nav>
             <ul class="menu-links">
                 <li class="menu-item">
-                    <a href="/" class="menu-link">Home</a>
+                    <a href="index.html" class="menu-link">Home</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/" class="menu-link">Serviços</a>
+                    <a href="#services" class="menu-link">Serviços</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/" class="menu-link">Sobre Nós</a>
+                    <a href="#about" class="menu-link">Sobre</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/" class="menu-link">Trabalhos</a>
+                    <a href="#works" class="menu-link">Trabalhos</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/" class="menu-link">Contato</a>
+                    <a href="#contact" class="menu-link">Contato</a>
                 </li>
             </ul>
         </nav>

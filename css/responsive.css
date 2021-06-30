@@ -35,12 +35,6 @@
     .contact {
         grid-template-columns: 1fr;
     }
-    .contact-content {
-        margin: 0 auto;
-    }
-    .contact .contact-img {
-        display: none;
-    }
 }
 
 

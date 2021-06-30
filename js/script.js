@@ -5,7 +5,7 @@ window.addEventListener("scroll", function() {
 });
 
 
-// Animation on scroll
+// Animation On Scroll
 function initAnimacaoScroll() {
     const sections = document.querySelectorAll('.js-scroll');
     if (sections.length) {
