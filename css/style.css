@@ -4,7 +4,7 @@
     background: url('../img/hero-bg.jpg') no-repeat top center;
     background-size: cover;
     flex-direction: column;
-    height: 100vh;
+    height: 90vh;
 }
 
 .hero h1 {

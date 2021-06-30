@@ -104,91 +104,83 @@ img {
 }
 
 
-/* Header */
+/* Menu */
 
-.main-header {
-    left: 0;
-    margin: 0 auto;
-    padding: 32px 15px;
+nav {
+    align-items: center;
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
     position: absolute;
+    left: 0;
     right: 0;
-    max-width: 100%;
-    transition: all .2s ease-in;
+    transition: all .3s ease-in;
 }
 
-.main-header.sticky {
+nav.sticky {
     background-color: var(--gray-100);
     box-shadow: 0 16px 20px rgba(0, 0, 0, .06);
-    padding: 18px 15px;
     position: fixed;
     z-index: 1000;
 }
 
-.main-nav {
-    justify-content: space-between !important;
-    max-width: 100%;
-    width: 100%;
-}
-
-
-/* Menu */
-
-.menu-links {
+.nav-list {
     display: flex;
-    align-items: center;
 }
 
-.menu-links .menu-item {
+.nav-list li {
     margin: 8px;
 }
 
-.menu-links .menu-item .menu-link {
+.nav-list li a {
     color: var(--gray-600);
-    font-size: 14px;
+    font-size: var(--body-14);
     padding: 8px;
-    transition: all 200ms;
+    transition: all .3s;
 }
 
-.menu-links .menu-item .menu-link:hover {
+.nav-list li a:hover {
     color: var(--primary);
 }
 
 
-/* Mobile Menu */
+/* Menu Mobile */
 
 .mobile-menu {
-    cursor: pointer;
     display: none;
+    cursor: pointer;
 }
 
 .mobile-menu div {
-    width: 32px;
+    width: 24px;
     height: 2px;
-    background-color: #000;
     margin: 8px;
+    background-color: var(--gray-600);
+    transition: .3s;
 }
 
 
 /* Social Media */
 
-.social-media {
-    margin: 0;
-    padding: 9px;
+.social-media img {
+    display: flex;
+    margin: 8px;
 }
 
 
 /* Footer */
 
-footer {
-    left: 0;
-    justify-content: space-between !important;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 32px 15px;
-    position: absolute;
-    right: 0;
-    width: 1140px;
+footer nav {
     flex-direction: column;
+    justify-content: space-between !important;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li {
+    margin: 8px;
 }
 
 footer .copy {
@@ -208,4 +200,27 @@ footer .copy {
 .js-scroll.ativo {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line-1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line-2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line-3 {
+    transform: rotate(45deg) translate(-5px, -7px);
 }

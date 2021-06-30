@@ -1,7 +1,7 @@
 // Sticky Navigation Bar
 window.addEventListener("scroll", function() {
-    let header = document.querySelector(".main-header");
-    header.classList.toggle("sticky", window.scrollY > 0)
+    const nav = document.querySelector("nav");
+    nav.classList.toggle("sticky", window.scrollY > 0)
 });
 
 
@@ -28,3 +28,51 @@ function initAnimacaoScroll() {
     }
 }
 initAnimacaoScroll();
+
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLisnks) {
+        this.mobileMenu = document.querySelector(mobileMenu);
+        this.navList = document.querySelector(navList);
+        this.navLisnks = document.querySelectorAll(navLisnks);
+        this.activeClass = "active";
+
+        this.handleClick = this.handleClick.bind(this);
+
+    }
+
+    animateLiks() {
+        this.navLisnks.forEach((link, index) => {
+
+            link.style.animation ?
+                (link.style.animation = "") :
+                (link.style.animation = `navLinkFade 0.5s ease forwards 0.3s`);
+        });
+
+    }
+
+    handleClick() {
+        console.log(this);
+        this.navList.classList.toggle(this.activeClass)
+        this.mobileMenu.classList.toggle(this.activeClass)
+        this.animateLiks();
+    }
+
+    addClickEvent() {
+        this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+
+    init() {
+        if (this.mobileMenu) {
+            this.addClickEvent();
+        }
+        return this;
+    }
+}
+
+const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    ".nav-list",
+    ".nav-list li",
+);
+
+mobileNavbar.init();
